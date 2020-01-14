@@ -27,5 +27,5 @@ body{
     background-color: darkblue;
     height: 10vh;
     width: 10vh;
-    align-self: right;
+    align-self: auto;
 }
