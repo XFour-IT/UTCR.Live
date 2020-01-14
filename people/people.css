@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans|Roboto+Slab&display=swap');
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.people{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.person{
+    text-align: center;
+    max-width: 50%;
+    flex-shrink: 1;
+    border-bottom: 1px solid black;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.title{
+    border-bottom: 1px solid black;
+    font-family: 'Public Sans', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+#navbar{
+    display: inline-flex;
+    background-color: darkblue;
+    height: 10vh;
+    width: 100vw;
+    margin: none;
+    padding-bottom: 10px;
+}
+
+#logo{
+    justify-content: flex-start;
+    background-color: darkblue;
+    height: 10vh;
+    width: 10vh;
+    margin: none;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+#credits{
+    justify-content: flex-end;
+    background-color: none;
+    height: 10vh;
+    width: 10vh;
+    align-self: auto;
+}
+
+#filler{
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 9vh;
+    margin-top: -1vh;
+}
+
+p{
+    font-family: 'Public Sans', sans-serif;
+    text-align: center;
+}

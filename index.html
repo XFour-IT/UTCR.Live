@@ -9,16 +9,54 @@
 </head>
 <body>
     <div id="wrapper">
+        <video autoplay muted loop id="background" poster="lib\res\wallpaper.png">
+        </video>
         <div id="navbar">
             <div id="logo">
 
             </div>
-            <div id="credits">
-
+            <span id="filler">
+                UTCR LIVE
+            </span>
+            <div id="credits" onclick="window.open('people/', '_self')">
+                <p id="credit-text">Credits</p>
             </div>
         </div>  
-        <audio controls autoplay="autoplay"><source src="http://andromeda.shoutca.st:8514/stream?type=.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+        <div id="control-button" onclick="start()">
+            <div id="aligner">
+                <p id="button-text">
+                    Play
+                </p>
+            </div>
+            
+        </div>
+        <audio controls id="radio"><source src="http://andromeda.shoutca.st:8514/stream?type=.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
     </div>
+    <script>
+        if (window.innerWidth > 600){
+            var video = document.getElementById("background")
+            var source = document.createElement("source")
+            source.src = "lib\\res\\waveform.mov"
+            //createDocumentFragment('<source src="lib/res/background.mp4" type="video/mp4">')
+            video.appendChild(source)
+            //console.log("success")
+        };
+
+        function start(){
+            var buttonText = document.getElementById("aligner")
+
+            if(buttonText.innerText == "Play"){
+                document.getElementById("radio").play();
+                buttonText.innerText = "Pause";
+            }
+            else{
+                document.getElementById("radio").pause();
+                buttonText.innerText = "Play"
+            }
+            
+            
+        }
+    </script>
 </body>
 </html>
 

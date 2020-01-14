@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Public+Sans|Roboto+Slab&display=swap');
+
 #wrapper{
-    background-color: aqua;
+    background-color: none;
     height: 100vh;
     width: 100vw;
 }
@@ -9,14 +11,15 @@ body{
 }
 
 #navbar{
+    display: inline-flex;
     background-color: unset;
     height: 10vh;
     width: 100vw;
-    border-bottom: 1px solid black;
     margin: none;
 }
 
 #logo{
+    justify-content: flex-start;
     background-color: darkblue;
     height: 10vh;
     width: 10vh;
@@ -24,8 +27,83 @@ body{
 }
 
 #credits{
+    justify-content: flex-end;
     background-color: darkblue;
     height: 10vh;
     width: 10vh;
     align-self: auto;
 }
+
+#credits:hover{
+    cursor: pointer;
+}
+
+#filler{
+    flex-grow: 1;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 9vh;
+    margin-top: -1vh;
+}
+
+#credit-text{
+    text-align: center;
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+    margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+audio{
+    visibility: hidden;
+}
+
+#background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    min-height: 100vh;
+    z-index: -32;
+    object-fit: cover;
+    /*display: none;*/
+    /*background: url("lib/res/backgroundposter.jpg");
+    background-size: cover;*/
+}
+
+#control-button{
+    background-color: none;
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: white;
+  border-style: solid;
+  width: 250px;
+  height: 75px;
+  color: white;
+  font-family: 'Public Sans', sans-serif;
+}
+
+#control-button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#aligner{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#control-button > p{
+    text-align: center;
+}
+
