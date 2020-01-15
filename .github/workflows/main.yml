@@ -9,10 +9,8 @@ on:
     - master
 
 jobs:
-  build:
-
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
@@ -23,3 +21,5 @@ jobs:
           ftp_username: autodeploy@utcr.live
           # FTP account password
           ftp_password: tO]q-xm*k*?M
+          method: ftp
+          port: 21
