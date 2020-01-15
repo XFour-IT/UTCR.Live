@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        uses: sebastianpopp/ftp-action@v1.1.0
         env:
           # FTP server name (you may need to specify a port)
           FTP_SERVER: ftp.xfour.co.uk
