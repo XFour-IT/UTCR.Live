@@ -44,6 +44,7 @@ body{
     height: 10vh;
     width: 10vh;
     margin: none;
+    background-size: contain;
 }
 
 #logo:hover{
