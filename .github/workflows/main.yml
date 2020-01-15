@@ -16,11 +16,8 @@ jobs:
         uses: sebastianpopp/ftp-action@v1.1.0
         env:
           # FTP server name (you may need to specify a port)
-          FTP_SERVER: ftp.xfour.co.uk
+          host: ftp.xfour.co.uk
           # FTP account username
-          FTP_USERNAME: autodeploy@utcr.live
+          user: autodeploy@utcr.live
           # FTP account password
-          FTP_PASSWORD: tO]q-xm*k*?M
-          method: ftp
-          port: 21
-          ARGS: --verbose --transfer-all
+          password: tO]q-xm*k*?M
