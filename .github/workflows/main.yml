@@ -1,0 +1,25 @@
+name: CI
+
+on: 
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@2.0.0
+        with:
+          # FTP server name (you may need to specify a port)
+          ftp_server: ftp.utcr.live
+          # FTP account username
+          ftp_username: autodeploy@utcr.live
+          # FTP account password
+          ftp_password: tO]q-xm*k*?M
