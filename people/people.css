@@ -17,12 +17,12 @@ body{
     max-width: 50%;
     flex-shrink: 1;
     border-bottom: 1px solid black;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
 }
 
 .title{
     border-bottom: 1px solid black;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     text-align: center;
     width: 100%;
     padding-bottom: 10px;
@@ -67,6 +67,6 @@ body{
 }
 
 p{
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Verdana', sans-serif;
     text-align: center;
 }
