@@ -23,3 +23,4 @@ jobs:
           FTP_PASSWORD: tO]q-xm*k*?M
           method: ftp
           port: 21
+          ARGS: --verbose
