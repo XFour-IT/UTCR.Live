@@ -18,8 +18,8 @@ jobs:
           # FTP server name (you may need to specify a port)
           FTP_SERVER: ftp.xfour.co.uk
           # FTP account username
-          ftp_username: autodeploy@utcr.live
+          FTP_USERNAME: autodeploy@utcr.live
           # FTP account password
-          ftp_password: tO]q-xm*k*?M
+          FTP_PASSWORD: tO]q-xm*k*?M
           method: ftp
           port: 21
