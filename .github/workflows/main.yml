@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@2.0.0
-        with:
+        env:
           # FTP server name (you may need to specify a port)
           FTP_SERVER: ftp.xfour.co.uk
           # FTP account username
