@@ -23,7 +23,7 @@
             </div>
         </div>
         <div id="control-wrapper">
-            <input type="range" min="0" max="1" step="0.01" ondragend="updateVolume()" id="volSlider">  
+            <input type="range" min="0" max="1" step="0.01" onchange="updateVolume()" id="volSlider">  
             <div id="control-button" onclick="start()">
                 <div id="aligner">
                     <p id="button-text">
@@ -65,7 +65,10 @@
         function updateVolume(){
             var radioItem = document.getElementById("radio")
             var vol = document.getElementById("volSlider")
-            radioItem.volume = vol.value;
+            realVol = parseFloat(vol.value)
+            radioItem.volume = realVol;
+            console.log(radioItem.volume)
+            console.log(realVol)
         }
     </script>
 </body>
