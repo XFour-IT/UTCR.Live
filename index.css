@@ -20,21 +20,27 @@ body{
 
 #logo{
     justify-content: flex-start;
-    background-color: darkblue;
+    background-color: none;
+    background-image: url("lib/res/logo.png");
+    background-size: contain;
     height: 10vh;
     width: 10vh;
-    margin: none;
+    margin-top: 2px;
+    margin-left: 2px;
     
 }
 
-#credits{
+#centerer{
     justify-content: flex-end;
-    background-color: none;
+    width: 10vh;
     height: 10vh;
-    width: 15vh;
-    align-self: auto;
-    border-left: white solid;
-    border-bottom: white solid;
+}
+
+#credits{
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
     color: white;
 }
 

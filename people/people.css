@@ -39,7 +39,8 @@ body{
 
 #logo{
     justify-content: flex-start;
-    background-color: darkblue;
+    background-color: none;
+    background-image: url("/lib/res/logo.png");
     height: 10vh;
     width: 10vh;
     margin: none;
