@@ -1,0 +1,24 @@
+name: CI
+
+on: 
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: FTP Deploy
+        uses: sebastianpopp/ftp-action@v1.1.0
+        with:
+          # FTP server name (you may need to specify a port)
+          host: ftp.xfour.co.uk
+          # FTP account username
+          user: autodeploy@utcr.live
+          # FTP account password
+          password: tO]q-xm*k*?M
