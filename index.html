@@ -6,75 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
     <title>UTCR.LIVE</title>
+    
 </head>
 <body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
     <div id="wrapper">
-        <video autoplay muted loop id="background" poster="lib\res\wallpaper.png">
         </video>
         <div id="navbar">
-            <div id="logo">
-
-            </div>
             <span id="filler">
                 UTCR.LIVE
             </span>
-            <div id="centerer">
-
-            </div>
         </div>
         <div id="control-wrapper">
-            <input type="range" min="0" max="1" step="0.01" onchange="updateVolume()" id="volSlider">  
-            <div id="control-button" onclick="start()">
-                <div id="aligner">
-                    <p id="button-text">
-                        Play
-                    </p>
-                </div>
-                
-            </div>
+                <iframe style="width: 400px; height: 150px; border: 0;" src="https://player.shoutca.st/?username=utcr"></iframe>
+
         </div>
         <audio controls id="radio"><source src="http://andromeda.shoutca.st:8514/stream?type=.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
         <div id="credits" onclick="window.open('people/', '_self')">
             <p id="credit-text">Meet the team</p>
         </div>
     </div>
-    
-    <script>
-        if (window.innerWidth > 600){
-            var video = document.getElementById("background")
-            var source = document.createElement("source")
-            source.src = "lib\\res\\waveform.mov"
-            //createDocumentFragment('<source src="lib/res/background.mp4" type="video/mp4">')
-            video.appendChild(source)
-            //console.log("success")
-        };
-
-        document.getElementById("volSlider").value = document.getElementById("radio").volume;
-
-        function start(){
-            var buttonText = document.getElementById("aligner")
-
-            if(buttonText.innerText == "Play"){
-                document.getElementById("radio").play();
-                buttonText.innerText = "Pause";
-            }
-            else{
-                document.getElementById("radio").pause();
-                buttonText.innerText = "Play"
-            }
-            
-            
-        }
-
-        function updateVolume(){
-            var radioItem = document.getElementById("radio")
-            var vol = document.getElementById("volSlider")
-            realVol = parseFloat(vol.value)
-            radioItem.volume = realVol;
-            console.log(radioItem.volume)
-            console.log(realVol)
-        }
-    </script>
 </body>
 </html>
 
