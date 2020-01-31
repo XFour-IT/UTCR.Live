@@ -78,5 +78,11 @@ p{
 }
 
 @media only screen and (max-width: 600px) {
-    
+    .person{
+        text-align: center;
+        width: 100%;
+        flex-shrink: 1;
+        border-bottom: 1px solid black;
+        font-family: 'Verdana', sans-serif;
+    }
 }

@@ -43,11 +43,17 @@ body{
 #filler{
     flex-grow: 1;
     text-align: center;
-    background: -webkit-linear-gradient(white, #38495a);
+    background: #77a8ce;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    font-family: 'Verdana', sans-serif;
     font-size: 9vh;
     margin-top: -1vh;
+}
+
+#navbar img{
+  max-width: 10vh;
+  height: 10vh;
+  position: relative;
 }
 
 #credit-text{
@@ -283,16 +289,12 @@ input[type=range]::-webkit-slider-runnable-track {
       #logo{
           display: none;
       }
-
-      div.person{
-        text-align: center;
-        width: 100%;
-        flex-shrink: 1;
-        border-bottom: 1px solid black;
-        font-family: 'Verdana', sans-serif;
-    }
   }
 
 .no-margin{
   margin-bottom: 0 !important;
+}
+
+.cc_recenttracks_list > img{
+  display: none;
 }
