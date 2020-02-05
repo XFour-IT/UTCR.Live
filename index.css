@@ -21,6 +21,7 @@ body{
     height: 10vh;
     width: 100vw;
     margin: none;
+    margin-top: 10px;
 }
 
 #logo{
@@ -54,6 +55,7 @@ body{
   max-width: 10vh;
   height: 10vh;
   position: relative;
+  margin-left: 10px;
 }
 
 #credit-text{
@@ -220,7 +222,7 @@ input[type=range]::-webkit-slider-runnable-track {
     background: #ffffff;
   }
 
-  html {
+  .landing-page {
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     overflow: hidden;
@@ -289,6 +291,7 @@ input[type=range]::-webkit-slider-runnable-track {
       #logo{
           display: none;
       }
+
   }
 
 .no-margin{
