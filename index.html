@@ -93,6 +93,9 @@
             <p>Our expert sports correspondent who has probably played football at least once.</p>
         </div>
     </section>
+    <section id="footer">
+        <p>And thanks to UTC Reading for letting us use their name</p>
+    </section>
     <!--<section class="people">
         <h1 class="title">Others</h1>
         <div class = "person">
@@ -116,21 +119,33 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
         </div>
         </section>-->
-    
-    </section>
+
     <script language="javascript" type="text/javascript" src="https://cressida.shoutca.st/system/recenttracks.js"></script>
+    <!--<script src="lib/js/three.r95.min.js"></script>
+    <script src="lib/js/vanta.net.min.js"></script>
     <script>
-        VANTA.RINGS({
-          el: "#particles-js",
-          mouseControls: true,
-          touchControls: true,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: '#e30187'
+        VANTA.NET({
+            el: "#particles-js",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: "#f35fb7",
+            backgroundColor: "#00173f",
+            points: 16.00,
+            maxDistance: 26.00,
+            spacing: 19.00
         })
-        </script>
+    </script> -->
+    <script src="lib/js/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'lib/js/particlesjs-config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+
+    </script>
 </body>
 </html>
 

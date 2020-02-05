@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Public+Sans|Roboto+Slab&display=swap');
 
 #wrapper{
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  background-color: none;
     height: 100vh;
     width: 100vw;
+    z-index: 1;
+}
+
+.particles-js-canvas-el{
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  background-color: #00235e;
+
 }
 
 .Meet{
@@ -74,6 +83,8 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: absolute;
+  bottom: 20%;
 }
 
 audio{
@@ -224,10 +235,12 @@ input[type=range]::-webkit-slider-runnable-track {
   }
 
   @media only screen and (max-width: 600px) {
-      #logo{
+      #navbar > img{
           display: none;
       }
-
+      #credits{
+        display: none;
+      }
       #flex-wrap > iframe{
         min-width: 100%;
       }
