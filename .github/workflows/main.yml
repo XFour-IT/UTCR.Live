@@ -21,4 +21,4 @@ jobs:
           # FTP account username
           user: autodeploy@utcr.live
           # FTP account password
-          password: tO]q-xm*k*?M
+          password: ${{ secrets.FTP_PASSWORD }}

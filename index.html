@@ -11,6 +11,15 @@
 <link rel="icon" type="image/png" sizes="32x32" href="lib/res/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="lib/res/favicon/favicon-16x16.png">
 <link rel="manifest" href="lib/res/favicon/site.webmanifest">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VFG9DR0BY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4VFG9DR0BY');
+    </script>
 </head>
 <body>
     <section class="landing-page" id="particles-js">
@@ -145,6 +154,10 @@
             console.log('callback - particles.js config loaded');
         });
 
+    </script>
+    <script src="https://chat-assets.frontapp.com/v1/chat.bundle.js"></script>
+    <script>
+    window.FrontChat('init', {chatId: '859c156169c40fd76371db394fcd564f', useDefaultLauncher: true});
     </script>
 </body>
 </html>
