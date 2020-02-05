@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
     <title>UTCR.LIVE</title>
+    <link rel="stylesheet" href="people.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="lib/res/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="lib/res/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="lib/res/favicon/favicon-16x16.png">
+<link rel="manifest" href="lib/res/favicon/site.webmanifest">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VFG9DR0BY"></script>
     <script>
@@ -17,72 +22,138 @@
     </script>
 </head>
 <body>
+    <section class="landing-page" id="particles-js">
     <div id="wrapper">
-        <video autoplay muted loop id="background" poster="lib\res\wallpaper.png">
         </video>
         <div id="navbar">
-            <div id="logo">
-
-            </div>
+            <img src="lib/res/logo.png"/>
             <span id="filler">
                 UTCR.LIVE
             </span>
-            <div id="centerer">
-
-            </div>
+            <div id="credits"></div>
         </div>
-        <div id="control-wrapper">
-            <input type="range" min="0" max="1" step="0.01" onchange="updateVolume()" id="volSlider">  
-            <div id="control-button" onclick="start()">
-                <div id="aligner">
-                    <p id="button-text">
-                        Play
-                    </p>
-                </div>
+        <div class="cc_recenttracks_list" data-username="utcr">Loading ...</div>
+        <div id="flex-wrap">
+                <iframe style="width: 400px; height: 50px; border: 0;" src="https://player.shoutca.st/?username=utcr"></iframe>
                 
-            </div>
         </div>
-        <audio controls id="radio"><source src="https://utcr.radioca.st/;" type="audio/mp3">Your browser does not support the audio element.</audio>
-        <div id="credits" onclick="window.open('people/', '_self')">
-            <p id="credit-text">Meet the team</p>
-        </div>
+        <audio controls id="radio"><source src="http://andromeda.shoutca.st:8514/stream?type=.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
     </div>
-    
+    </section>
+    <section class="Meet">
+        <section class="people">
+            <h1 class="title">Hosts</h1>
+        <div class = "person">
+            <h3>Cam Curtis</h3>
+            <h4>Host</h4>
+            <p>Nobody knows how he got this job, he's got no experience, can't talk very well. But apparently sounds very good on the radio!</p>
+        </div>
+        <div class = "person">
+            <h3>Matt Salé</h3>
+            <h4>Host</h4>
+            <p>He pretty much came with the room when we first hired it but now he's the nations favourite radio host that nobody knows about.</p>
+        </div>
+        <div class = "person">
+            <h3>Daniel Bradley</h3>
+            <h4>Politics</h4>
+            <p>With an extensive background in annoying everyone by talking about politics too much, Dan is absolutely perfect for this role and only sometimes has to be cut off for time.</p>
+        </div>
+        <div class = "person">
+            <h3>Rory Milligan</h3>
+            <h4>DJ</h4>
+            <p>A strange individual, sometimes he plays music, sometimes he disappears. Shrouded in mysery Rory is a magical being. Much to the likes of a pegasus. </p>
+        </div>
+       <!-- <div class = "person">
+            <h3>Name</h3>
+            <h4>show</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
+        </div>
+        <div class = "person">
+            <h3>Name</h3>
+            <h4>show</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
+        </div>
+        <div class = "person">
+            <h3>Name</h3>
+            <h4>show</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
+        </div>-->
+    </section>
+    <section class="people">
+        <h1 class="title">Producers</h1>
+        <div class = "person">
+            <h3>Benjamin Lewis</h3>
+            <h4>Executive Producer</h4>
+            <p>The most glorious member of the production team. Definitely not just because he's writing these descriptions for everyone. </p>
+        </div>
+        <div class = "person">
+            <h3>Reilly Hewitson</h3>
+            <h4>Producer</h4>
+            <p>Does things. No-one knows what he does but he seems vaguely helpful so we keep him around.</p>
+        </div>
+        <div class = "person">
+            <h3>Oliver Beardsall</h3>
+            <h4>Producer</h4>
+            <p>He's pretty useless but he can make a damn good cup of tea. Actually, he really can't; he made me tea once it was awful. But his audio sounds good usually!</p>
+        </div>
+        <div class = "person no-margin">
+            <h3>Elliott Scott</h3>
+            <h4>1st Production Assistant</h4>
+            <p>Our expert sports correspondent who has probably played football at least once.</p>
+        </div>
+    </section>
+    <section id="footer">
+        <p>And thanks to UTC Reading for letting us use their name</p>
+    </section>
+    <!--<section class="people">
+        <h1 class="title">Others</h1>
+        <div class = "person">
+            <h3>Name</h3>
+            <h4>Job</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
+        </div>
+        <div class = "person">
+            <h3>Name</h3>
+            <h4>Job</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
+        </div>
+        <div class = "person">
+            <h3>Name</h3>
+            <h4>Job</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
+        </div>
+        <div class = "person">
+            <h3>Name</h3>
+            <h4>Job</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique debitis fugiat doloremque earum nisi accusamus necessitatibus vero facere totam, molestiae doloribus excepturi aspernatur!</p>
+        </div>
+        </section>-->
+
+    <script language="javascript" type="text/javascript" src="https://cressida.shoutca.st/system/recenttracks.js"></script>
+    <!--<script src="lib/js/three.r95.min.js"></script>
+    <script src="lib/js/vanta.net.min.js"></script>
     <script>
-        if (window.innerWidth > 600){
-            var video = document.getElementById("background")
-            var source = document.createElement("source")
-            source.src = "lib\\res\\waveform.mov"
-            //createDocumentFragment('<source src="lib/res/background.mp4" type="video/mp4">')
-            video.appendChild(source)
-            //console.log("success")
-        };
+        VANTA.NET({
+            el: "#particles-js",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: "#f35fb7",
+            backgroundColor: "#00173f",
+            points: 16.00,
+            maxDistance: 26.00,
+            spacing: 19.00
+        })
+    </script> -->
+    <script src="lib/js/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'lib/js/particlesjs-config.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
 
-        document.getElementById("volSlider").value = document.getElementById("radio").volume;
-
-        function start(){
-            var buttonText = document.getElementById("aligner")
-
-            if(buttonText.innerText == "Play"){
-                document.getElementById("radio").play();
-                buttonText.innerText = "Pause";
-            }
-            else{
-                document.getElementById("radio").pause();
-                buttonText.innerText = "Play"
-            }
-            
-            
-        }
-
-        function updateVolume(){
-            var radioItem = document.getElementById("radio")
-            var vol = document.getElementById("volSlider")
-            realVol = parseFloat(vol.value)
-            radioItem.volume = realVol;
-            console.log(radioItem.volume)
-            console.log(realVol)
-        }
     </script>
     <script src="https://chat-assets.frontapp.com/v1/chat.bundle.js"></script>
     <script>
