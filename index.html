@@ -30,7 +30,8 @@
             <span id="filler">
                 UTCR.LIVE
             </span>
-            <div id="credits"></div>
+            <div id="credits">
+            </div>
         </div>
         <!--<div class="cc_recenttracks_list" data-username="utcr">Loading ...</div>-->
         <div id="flex-wrap">
@@ -90,7 +91,6 @@
     <section id="footer">
         <p>And thanks to UTC Reading for letting us use their name</p>
     </section>
-
     <script language="javascript" type="text/javascript" src="https://http://cressida.shoutca.st/system/recenttracks.js"></script>
 
     <script src="lib/js/particles.js"></script>
@@ -98,13 +98,13 @@
         particlesJS.load('particles-js', 'lib/js/particlesjs-config.json', function() {
             console.log('callback - particles.js config loaded');
         });
-
-        
-
+        setTimeout(function(){
+            document.getElementById("front-chat-holder").setAttribute("style", "position: fixed;bottom: 35px;left: 0px;right: 0px;top: 0px;display: flex;flex-direction: column;")
+        }, 250)
     </script>
     <script src="https://chat-assets.frontapp.com/v1/chat.bundle.js"></script>
     <script>
-    window.FrontChat('init', {chatId: '859c156169c40fd76371db394fcd564f', useDefaultLauncher: true});
+    window.FrontChat('init', {chatId: '859c156169c40fd76371db394fcd564f', useDefaultLauncher: true})
     </script>
 </body>
 </html>

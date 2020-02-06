@@ -15,6 +15,10 @@
 
 }
 
+#front-chat-container{
+  bottom: 20px !important;
+}
+
 .Meet{
   background-color: #ffffff;
 }
