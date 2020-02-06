@@ -15,6 +15,12 @@
 
 }
 
+#tcs{
+  font-size: xx-small;
+  font-family: 'Verdana', sans-serif;
+  font-style: italic;
+}
+
 #front-chat-container{
   bottom: 20px !important;
 }
