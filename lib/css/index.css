@@ -15,12 +15,38 @@
 
 }
 
+#tcs{
+  font-size: xx-small;
+  font-family: 'Verdana', sans-serif;
+  font-style: italic;
+}
+
 #front-chat-container{
   bottom: 20px !important;
 }
 
 .Meet{
   background-color: #ffffff;
+}
+
+#update-form{
+  display: none;
+}
+
+
+
+#column{
+  display: flex;
+  flex-direction: column;
+}
+
+#form-button{
+  margin-top: 2%;
+  text-align: center;
+}
+
+#form-button:hover{
+  cursor: pointer;
 }
 
 body{
@@ -252,6 +278,10 @@ input[type=range]::-webkit-slider-runnable-track {
       #flex-wrap{
         position: absolute;
         bottom: 0;
+      }
+
+      #form-button{
+        margin: 0;
       }
 
   }

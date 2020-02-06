@@ -40,6 +40,13 @@
         </div>
         <audio controls id="radio"><source src="https://utcr.radioca.st" type="audio/mp3">Your browser does not support the audio element.</audio>
     </div>
+    <div></div>
+    <div id="form-button-div">
+        <h1 class="title">Student Update competition</h1>
+        <p>Every morning we run a competition to see who can guess when the UTC Reading student update will be released. If you guess correctly you will win a prize</p>
+        <a class="typeform-share button" href="https://benjilewis.typeform.com/to/g5tOAn" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#00235E;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;height:50px;padding:0px 0px;border-radius:0px;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="3" target="_blank" id="form-button">Enter the competition </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        <p id="tcs">Prize TBC. UTC Reading students only. Closes at 9am or after the update is sent out. Responses after this time will not be valid.</p>
+    </div>
     </section>
     <section class="Meet">
         <section class="people">
@@ -91,13 +98,20 @@
     <section id="footer">
         <p>And thanks to UTC Reading for letting us use their name</p>
     </section>
-    <script language="javascript" type="text/javascript" src="https://http://cressida.shoutca.st/system/recenttracks.js"></script>
+    <!--<script language="javascript" type="text/javascript" src="https://http://cressida.shoutca.st/system/recenttracks.js"></script>-->
 
     <script src="lib/js/particles.js"></script>
     <script>
+        var time = new Date();
+        if(time.getHours() > 9){
+            console.log(time.getHours());
+            document.getElementById("form-button-div").style.display = "none";
+        }
+        console.log(time.getHours());
         particlesJS.load('particles-js', 'lib/js/particlesjs-config.json', function() {
             console.log('callback - particles.js config loaded');
         });
+        
         if(document.documentElement.clientWidth <= 600){
             setTimeout(function(){
                 document.getElementById("front-chat-holder").setAttribute("style", "position: fixed;bottom: 50px;left: 0px;right: 0px;top: 0px;display: flex;flex-direction: column;")
