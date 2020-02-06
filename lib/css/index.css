@@ -23,6 +23,26 @@
   background-color: #ffffff;
 }
 
+#update-form{
+  display: none;
+}
+
+
+
+#column{
+  display: flex;
+  flex-direction: column;
+}
+
+#form-button{
+  margin-top: 2%;
+  text-align: center;
+}
+
+#form-button:hover{
+  cursor: pointer;
+}
+
 body{
     margin: 0;
     height: 100%;
@@ -252,6 +272,10 @@ input[type=range]::-webkit-slider-runnable-track {
       #flex-wrap{
         position: absolute;
         bottom: 0;
+      }
+
+      #form-button{
+        margin: 0;
       }
 
   }
