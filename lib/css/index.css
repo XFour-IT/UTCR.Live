@@ -114,11 +114,7 @@ body{
   flex-direction: row;
   justify-content: center;
   position: absolute;
-  bottom: 30%;
-}
-
-audio{
-    visibility: hidden;
+  bottom:20%;
 }
 
 .cc_recenttracks_list{
