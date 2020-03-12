@@ -117,10 +117,6 @@ body{
   bottom: 20%;
 }
 
-audio{
-    visibility: hidden;
-}
-
 .cc_recenttracks_list{
     margin: 0;
     position: relative;
@@ -292,4 +288,24 @@ input[type=range]::-webkit-slider-runnable-track {
 
 .cc_recenttracks_list > img{
   display: none;
+}
+
+#tab-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  align-content: center;
+}
+
+#tab-wrapper span{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  width: 10%;
+  text-align: center;
+}
+
+.selected{
+  border-bottom: purple 3px solid;
 }
