@@ -48,12 +48,18 @@
         <p id="tcs">Prize TBC. UTC Reading students only. Closes at 9am or after the update is sent out. Responses after this time will not be valid.</p>
     </div>
     <div id="tab-wrapper">
-        <span onclick="openTab('people-list-wrapper')" class="selected">People</span>
-        <span onclick="openTab('live-shows-wrapper')">Live shows</span>
-        <span onclick="openTab('past-shows-wrapper')">Past shows</span>
+        <span onclick="openTab('people-list-wrapper', 'people-tab')" class="selected" id="people-tab">People</span>
+        <!--<span onclick="openTab('live-shows-wrapper', 'live-tab')" id="live-tab">Live shows</span>-->
+        <span onclick="openTab('past-shows-wrapper', 'past-tab')" id="past-tab">Past shows</span>
+        <span onclick='window.open("https://discord.gg/D9Bs5Mz", "_blank")' id="past-tab">Discord</span>
     </div>
-    <div id="past-shows-wrapper" class="tab-content-wrapper hidden"></div>
-    <div id="live-shows-wrapper" class="tab-content-wrapper hidden"></div>
+    <div id="past-shows-wrapper" class="tab-content-wrapper hidden">
+        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F13th-feb-show%2F" frameborder="0" ></iframe>
+        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F12th-feb-show%2F" frameborder="0" ></iframe>
+        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F7th-feb-show%2F" frameborder="0" ></iframe>
+        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F6th-february-show%2F" frameborder="0" ></iframe>
+    </div>
+    <!--<div id="live-shows-wrapper" class="tab-content-wrapper hidden"></div>-->
     <div id="people-list-wrapper" class="tab-content-wrapper">
         <section class="Meet">
             <section class="people">
@@ -115,7 +121,7 @@
     </div>
     <section id="footer">
         <p>Thanks to UTC Reading for letting us use their name</p>
-        <p>If you're interested in putting your song on our station send it in to <a href="mailto:contact@utcr.live">contact@utcr.live</a></p>
+        <p>If you're interested in putting your song on our station send it in to <a href="mailto:contact@utcr.live">contact@utcr.live</a></p> 
     </section>
     <!--<script language="javascript" type="text/javascript" src="https://http://cressida.shoutca.st/system/recenttracks.js"></script>-->
 
@@ -135,6 +141,21 @@
             setTimeout(function(){
                 document.getElementById("front-chat-holder").setAttribute("style", "position: fixed;bottom: 50px;left: 0px;right: 0px;top: 0px;display: flex;flex-direction: column;")
             }, 250)
+        }
+
+        function openTab(tabwrapper, tab){
+            console.log(tabwrapper)
+           tabwrapperelement =  document.getElementById(tabwrapper);
+           tabelement = document.getElementById(tab);
+           document.getElementById("past-shows-wrapper").classList.add("hidden");
+           //document.getElementById("live-shows-wrapper").classList.add("hidden");
+           document.getElementById("people-list-wrapper").classList.add("hidden");
+           tabwrapperelement.classList.remove("hidden");
+           document.getElementById("past-tab").classList.remove("selected");
+           //document.getElementById("live-tab").classList.remove("selected");
+           document.getElementById("people-tab").classList.remove("selected");
+           tabelement.classList.add("selected")
+            
         }
         
     </script>
