@@ -117,10 +117,6 @@ body{
   bottom: 20%;
 }
 
-audio{
-    visibility: hidden;
-}
-
 .cc_recenttracks_list{
     margin: 0;
     position: relative;
@@ -264,6 +260,13 @@ input[type=range]::-webkit-slider-runnable-track {
     background: #ffffff;
   }
 
+  #past-shows-wrapper{
+    margin-top: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 1344px;
+  }
+
   @media only screen and (max-width: 600px) {
       #navbar > img{
           display: none;
@@ -284,6 +287,12 @@ input[type=range]::-webkit-slider-runnable-track {
         margin: 0;
       }
 
+      #past-shows-wrapper{
+        margin-top: 2rem;
+        margin-left: 2%;
+      margin-right: 2%;
+      }
+
   }
 
 .no-margin{
@@ -293,3 +302,34 @@ input[type=range]::-webkit-slider-runnable-track {
 .cc_recenttracks_list > img{
   display: none;
 }
+
+#tab-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  align-content: center;
+}
+
+#tab-wrapper span{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  width: 10%;
+  text-align: center;
+}
+
+#tab-wrapper span:hover{
+  cursor: pointer;
+}
+
+.selected{
+  border-bottom: purple 3px solid;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
