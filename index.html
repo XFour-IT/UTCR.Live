@@ -38,10 +38,10 @@
                 <iframe style="width: 400px; height: 50px; border: 0;" src="https://player.shoutca.st/?username=utcr"></iframe>
                 
         </div>
-        <audio controls id="radio"><source src="https://utcr.radioca.st" type="audio/mp3">Your browser does not support the audio element.</audio>
-    </div>
+        <!--<div class="cc_player" id="radio" data-skin="arvyskin" data-width="560" data-height="30" data-username="utcr">Loading ...</div>
+        <script language="javascript" type="text/javascript" src="https://cressida.shoutca.st/system/player.js%22%3E"></script> </script>    </div>-->
     <div></div>
-    <div id="form-button-div">
+    <div id="form-button-div" style="display: none;">
         <h1 class="title">Student Update competition</h1>
         <p>Every morning we run a competition to see who can guess when the UTC Reading student update will be released. If you guess correctly you will win a prize</p>
         <a class="typeform-share button" href="https://benjilewis.typeform.com/to/g5tOAn" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#00235E;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;height:50px;padding:0px 0px;border-radius:0px;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="3" target="_blank" id="form-button">Enter the competition </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
@@ -54,6 +54,7 @@
         <span onclick="openTab('past-shows-wrapper', 'past-tab')" id="past-tab">Past shows</span>
         <span onclick='window.open("https://discord.gg/D9Bs5Mz", "_blank")' id="past-tab">Discord</span>
     </div>
+    <hr>
     <div id="past-shows-wrapper" class="tab-content-wrapper hidden">
         <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F13th-feb-show%2F" frameborder="0" ></iframe>
         <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F12th-feb-show%2F" frameborder="0" ></iframe>
@@ -67,19 +68,19 @@
             <p>Only the most relevant music from our fantastic host and politcal correspondent Daniel Bradley. Includes your early morning updates</p>
         </div>
         <div class="schedule-part person">
-            <h2 class="title">Pop Rock Show with Yeet</h2>
+            <h2 class="title">The Pop Rock Show with Yeet</h2>
             <h3>1pm-3pm</h3>
-            <p>All the latest music to hit the airwaves as you detox from your busy morning of lessons.</p>
+            <p>All the latest music to hit the interwaves as you detox from your busy morning of lessons.</p>
         </div>
         <div class="schedule-part person">
-            <h2 class="title">¯\_(ツ)_/¯ with Reilly</h2>
+            <h2 class="title">The ¯\_(ツ)_/¯ Show with Reilly</h2>
             <h3>3pm-5pm</h3>
-            <p>Some different music and a special interview on Friday.</p>
+            <p>Some different music and a special interview every Friday!</p>
         </div>
         <div class="schedule-part person">
-            <h2 class="title">Benji Hour</h2>
-            <h3>3pm-5pm</h3>
-            <p>Pop, news, experiments, fun. This is what the Benji hour is and More!</p>
+            <h2 class="title">Benji "Hour"</h2>
+            <h3>7pm-9pm</h3>
+            <p>Pop, news, experiments, fun. This is what the Benji hour is and more!</p>
         </div>
     </div>
     <!--<div id="live-shows-wrapper" class="tab-content-wrapper hidden"></div>-->
@@ -142,6 +143,7 @@
             </div>
         </section>
     </div>
+    <hr>
     <section id="footer">
         <p>Thanks to UTC Reading for letting us use their name</p>
         <p>If you're interested in putting your song on our station send it in to <a href="mailto:contact@utcr.live">contact@utcr.live</a></p> 
@@ -180,7 +182,6 @@
            document.getElementById("people-tab").classList.remove("selected");
            document.getElementById("schedule-tab").classList.remove("selected");
            tabelement.classList.add("selected")
-            
         }
         
     </script>
