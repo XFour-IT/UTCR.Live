@@ -51,7 +51,7 @@
     <div id="tab-wrapper">
         <span onclick="openTab('people-list-wrapper', 'people-tab')" class="selected" id="people-tab">People</span>
         <span onclick="openTab('schedule-wrapper', 'schedule-tab')" id="schedule-tab">Schedule</span>
-        <!--<span onclick="openTab('live-shows-wrapper', 'live-tab')" id="live-tab">Live shows</span>-->
+        <span onclick="openTab('live-shows-wrapper', 'live-tab')" id="live-tab">Live shows</span>
         <span onclick="openTab('past-shows-wrapper', 'past-tab')" id="past-tab">Past shows</span>
         <span onclick='window.open("https://discord.gg/D9Bs5Mz", "_blank")' id="past-tab">Chat</span>
     </div>
@@ -85,7 +85,11 @@
         </div>
     </div>
    
-    <!--<div id="live-shows-wrapper" class="tab-content-wrapper hidden"></div>-->
+    <div id="live-shows-wrapper" class="tab-content-wrapper hidden">
+        <div id="live-now">
+        <iframe id="live-now-vid" src="https://www.youtube.com/embed/aq9S5-t1Xf8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
     <div id="people-list-wrapper" class="tab-content-wrapper">
         <section class="Meet">
             <section class="people">
@@ -176,12 +180,12 @@
             tabwrapperelement =  document.getElementById(tabwrapper);
             tabelement = document.getElementById(tab);
             document.getElementById("past-shows-wrapper").classList.add("hidden");
-            //document.getElementById("live-shows-wrapper").classList.add("hidden");
+            document.getElementById("live-shows-wrapper").classList.add("hidden");
             document.getElementById("people-list-wrapper").classList.add("hidden");
             document.getElementById("schedule-wrapper").classList.add("hidden");
             tabwrapperelement.classList.remove("hidden");
             document.getElementById("past-tab").classList.remove("selected");
-            //document.getElementById("live-tab").classList.remove("selected");
+            document.getElementById("live-tab").classList.remove("selected");
             document.getElementById("people-tab").classList.remove("selected");
             document.getElementById("schedule-tab").classList.remove("selected");
             tabelement.classList.add("selected")    
