@@ -1,0 +1,38 @@
+#tab-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*width: 100vw;*/
+  align-content: center;
+}
+
+#past-wrapper {
+}
+
+#tab-wrapper span {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  width: 10%;
+  text-align: center;
+}
+
+#tab-wrapper span:hover {
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: purple 3px solid;
+}
+
+.hidden {
+  display: none;
+}
+
+.particles-js-canvas-el {
+  /*z-index: -1;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
