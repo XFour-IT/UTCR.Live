@@ -314,6 +314,17 @@ input[type=range]::-webkit-slider-runnable-track {
   display: none;
 }
 
+#social{
+  text-align: center;
+  color: black;
+  padding-bottom: 5px;
+}
+
+#social a:any-link{
+  color: black;
+}
+
+
 #tab-wrapper{
   display: flex;
   flex-direction: row;
@@ -355,13 +366,4 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 100%;
 }
 
-#social{
-  text-align: center;
-  color: black;
-  padding-bottom: 5px;
-}
-
-#social a:any-link{
-  color: black;
-}
 
