@@ -343,6 +343,7 @@ input[type=range]::-webkit-slider-runnable-track {
   display: none;
 }
 
+
 #live-now{
   margin: auto;
   width: 90%;
@@ -352,5 +353,15 @@ input[type=range]::-webkit-slider-runnable-track {
 #live-now-vid{
   width: 100%;
   height: 100%;
+}
+
+#social{
+  text-align: center;
+  color: black;
+  padding-bottom: 5px;
+}
+
+#social a:any-link{
+  color: black;
 }
 
