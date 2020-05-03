@@ -1,203 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="lib/css/index.css">
-    <title>UTCR.LIVE</title>
-    <link rel="stylesheet" href="lib/css/people.css">
-    <script src="https://kit.fontawesome.com/773ab81392.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="lib/res/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="lib/res/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="lib/res/favicon/favicon-16x16.png">
-    <link rel="manifest" href="lib/res/favicon/site.webmanifest">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VFG9DR0BY"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html>
 
-    gtag('config', 'G-4VFG9DR0BY');
-    </script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - UTCR.LIVE</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=1aee70ef80c542a33951c60373f7df74">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/hidden.css?h=eb698e69e0e31c9c1228d1d1d610477e">
+    <link rel="stylesheet" href="assets/css/Tabbed_slider-1.css?h=8a2bbfc7867daede80e6d34e6655bbe7">
+    <link rel="stylesheet" href="assets/css/Tabbed_slider.css?h=d41d8cd98f00b204e9800998ecf8427e">
+    <link rel="stylesheet" href="assets/css/Team-Boxed.css?h=31105afb819a2b4a21646176f70cce71">
 </head>
-<body>
-    <section class="landing-page" id="particles-js">
-    <div id="wrapper">
-        </video>
-        <div id="navbar">
-            <img src="lib/res/logo.png"/>
-            <span id="filler">
-                UTCR.LIVE
-            </span>
-            <div id="credits">
+
+<body style="padding-top: 0;font-family: 'Open Sans', sans-serif;">
+    <header id="particles-js" class="masthead text-center text-white" style="background-color: #000364;background-image: url(&quot;unset&quot;);height: 100vh;">
+        <div class="masthead-content">
+            <div class="container" style="margin: auto;">
+                <h1 class="masthead-heading mb-0">UTCR.Live</h1>
+                <div class="embed-responsive embed-responsive-21by9" id="player" style="height: 50px;width: 80%;margin: auto;padding: -1px;margin-right: auto;margin-left: auto;margin-top: 10vh;"><iframe class="embed-responsive-item" src="https://player.shoutca.st/?username=utcr" id="player"></iframe></div>
             </div>
         </div>
-        <!--<div class="cc_recenttracks_list" data-username="utcr">Loading ...</div>-->
-        <div id="flex-wrap">
-                <iframe style="width: 400px; height: 50px; border: 0;" src="https://player.shoutca.st/?username=utcr"></iframe>
-                
-        </div>
-        <!--<div class="cc_player" id="radio" data-skin="arvyskin" data-width="560" data-height="30" data-username="utcr">Loading ...</div>
-        <script language="javascript" type="text/javascript" src="https://cressida.shoutca.st/system/player.js%22%3E"></script> </script>    </div>-->
-    <div></div>
-    </section>
-    <div id="form-button-div" style="display: none;">
-        <h1 class="title">Student Update competition</h1>
-        <p>Every morning we run a competition to see who can guess when the UTC Reading student update will be released. If you guess correctly you will win a prize</p>
-        <a class="typeform-share button" href="https://benjilewis.typeform.com/to/g5tOAn" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#00235E;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;height:50px;padding:0px 0px;border-radius:0px;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="3" target="_blank" id="form-button">Enter the competition </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-        <p id="tcs">Prize TBC. UTC Reading students only. Closes at 9am or after the update is sent out. Responses after this time will not be valid.</p>
-    </div>
-    <div id="tab-wrapper">
-        <span onclick="openTab('people-list-wrapper', 'people-tab')" class="selected" id="people-tab">People</span>
+    </header><div id="tab-wrapper">
+        <span onclick="openTab('team-wrapper', 'people-tab')" class="selected" id="people-tab">People</span>
         <span onclick="openTab('schedule-wrapper', 'schedule-tab')" id="schedule-tab">Schedule</span>
-        <!--<span onclick="openTab('live-shows-wrapper', 'live-tab')" id="live-tab">Live shows</span>-->
-        <span onclick="openTab('past-shows-wrapper', 'past-tab')" id="past-tab">Past shows</span>
+        <span onclick="openTab('live-shows-wrapper', 'live-tab')" id="live-tab">Live shows</span>
+        <span onclick="openTab('past-wrapper', 'past-tab')" id="past-tab">Past shows</span>
         <span onclick='window.open("https://discord.gg/D9Bs5Mz", "_blank")' id="past-tab">Chat</span>
     </div>
-    <hr>
-    <div id="past-shows-wrapper" class="tab-content-wrapper hidden">
-        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F13th-feb-show%2F" frameborder="0" ></iframe>
-        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F12th-feb-show%2F" frameborder="0" ></iframe>
-        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F7th-feb-show%2F" frameborder="0" ></iframe>
-        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FUTCRLIVE%2F6th-february-show%2F" frameborder="0" ></iframe>
+    <!-- Start: Team Boxed -->
+    <div id="team-wrapper" class="team-boxed">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h2 class="text-center">Team </h2>
+                <p class="text-center">The wonderful team behind UTCR.Live</p>
+            </div>
+            <!-- End: Intro -->
+            <!-- Start: People -->
+            <div class="row no-gutters d-flex people">
+                <div class="col-md-6 col-lg-4 flex-grow-1 item people-boxes">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Benjamin Lewis</h3>
+                        <p class="title">Executive Producer</p>
+                        <p class="description"><br>The most glorious member of the production team. Definitely not just because he's writing these descriptions for everyone.<br><br></p>
+                        <div class="social"><a href="#"></a><a href="#"><i class="fa fa-linkedin-square"></i></a><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 flex-grow-1 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Oliver Beardsall</h3>
+                        <p class="title">Producer + Sound Engineer</p>
+                        <p class="description" style="height: 110px;"><br>He's pretty useless but he can make a damn good cup of tea. Actually, he really can't; he made me tea once it was awful. But his audio sounds good usually!<br><br></p>
+                        <div class="social"><a href="#"></a><a href="#"><i class="fa fa-linkedin-square"></i></a><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 flex-grow-1 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="flex-grow-1 name">Reilly Hewitson</h3>
+                        <p class="title">Producer + Web Developer</p>
+                        <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                        <div class="social"><a href="#"><i class="fa fa-linkedin-square"></i></a><a href="#"><i class="fa fa-globe"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: People -->
+            <!-- Start: People -->
+            <div class="row no-gutters people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Thomas Wright</h3>
+                        <p class="title">Business Relationship Manager</p>
+                        <p class="description"><br>Tom kinda just showed up one day ready and raring to go. We let him in and now he's meant to send emails to important people.<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Jeetaditya Chatterjee</h3>
+                        <p class="title">Host + Production assistant</p>
+                        <p class="description" style="height: 110px;"><br>No-one can pronounce his name so we call him yeet. However he does know his stuff.<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Elliott Scott</h3>
+                        <p class="title">Sports Correspondent</p>
+                        <p class="description"><br>Our expert sports correspondent who has probably played football at least once.<br><br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: People -->
+            <!-- Start: People -->
+            <div class="row no-gutters people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Cam Curtis</h3>
+                        <p class="title">Host</p>
+                        <p class="description"><br>Nobody knows how he got this job, he's got no experience, can't talk very well. But apparently sounds very good on the radio!<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name" style="height: 33px;">Matt Salé<br><br></h3>
+                        <p class="title">Host</p>
+                        <p class="description" style="height: 110px;"><br>He pretty much came with the room when we first hired it but now he's the nations favourite radio host that nobody knows about.<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Daniel Bradley</h3>
+                        <p class="title">Host + Politics Correspondent</p>
+                        <p class="description" style="height: 110px;"><br>With an extensive background in annoying everyone by talking about politics too much, Dan is absolutely perfect for this role and only sometimes has to be cut off for time.<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: People -->
+            <!-- Start: People -->
+            <div class="row no-gutters people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Cam Curtis</h3>
+                        <p class="title">Host</p>
+                        <p class="description"><br>Nobody knows how he got this job, he's got no experience, can't talk very well. But apparently sounds very good on the radio!<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name" style="height: 33px;">Matt Salé<br><br></h3>
+                        <p class="title">Host</p>
+                        <p class="description" style="height: 110px;"><br>He pretty much came with the room when we first hired it but now he's the nations favourite radio host that nobody knows about.<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Daniel Bradley</h3>
+                        <p class="title">Host + Politics Correspondent</p>
+                        <p class="description" style="height: 110px;"><br>With an extensive background in annoying everyone by talking about politics too much, Dan is absolutely perfect for this role and only sometimes has to be cut off for time.<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: People -->
+            <!-- Start: People -->
+            <div class="row no-gutters people">
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Luke Holland</h3>
+                        <p class="title">Host</p>
+                        <p class="description" style="height: 110px;"><br>The greenie in the room. Is surprisingly good at this!<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item"></div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box" style="height: 100%;">
+                        <h3 class="name">Rory Milligan</h3>
+                        <p class="title">Music Man</p>
+                        <p class="description" style="height: 110px;"><br>A strange individual, sometimes he plays music, sometimes he disappears. Shrouded in mysery Rory is a magical being. Much to the likes of a pegasus.<br><br></p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: People -->
+        </div>
     </div>
-    <div id="schedule-wrapper" class="tab-content-wrapper hidden">
-        <div class="schedule-part person">
-            <h2 class="title">Morning Show with Dan</h2>
-            <h3>8am-9am</h3>
-            <p>Only the most relevant music from our fantastic host and politcal correspondent Daniel Bradley. Includes your early morning updates</p>
-        </div>
-        <div class="schedule-part person">
-            <h2 class="title">The Pop Rock Show with Yeet</h2>
-            <h3>1pm-3pm</h3>
-            <p>All the latest music to hit the interwaves as you detox from your busy morning of lessons.</p>
-        </div>
-        <div class="schedule-part person">
-            <h2 class="title">The ¯\_(ツ)_/¯ Show with Reilly</h2>
-            <h3>3pm-5pm</h3>
-            <p>Some different music and a special interview every Friday!</p>
-        </div>
-        <div class="schedule-part person">
-            <h2 class="title">Benji "Hour"</h2>
-            <h3>7pm-9pm</h3>
-            <p>Pop, news, experiments, fun. This is what the Benji hour is and more!</p>
+    <!-- End: Team Boxed -->
+    <!-- Start: 1 Row 3 Columns -->
+    <div id="schedule-wrapper" class="hidden">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-4 flex-grow-1">
+                    <div class="card border-white flex-grow-1" style="width: 100%;height: 100%;">
+                        <div class="card-body">
+                            <h3 class="text-center card-title">Morning Show with Dan</h3>
+                            <h5 class="text-center card-title">8am-9 am</h5>
+                            <p class="text-center card-text"><br>Only the most relevant music from our fantastic host and politcal correspondent Daniel Bradley. Includes your early morning updates<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-white flex-grow-1" style="width: 100%;height: 100%;">
+                        <div class="card-body flex-grow-1">
+                            <h4 class="text-center card-title">The Pop Rock Show with Yeet</h4>
+                            <h5 class="text-center card-title">1pm - 3pm</h5>
+                            <p class="text-center card-text" style="height: 144px;"><br>All the latest music to hit the interwaves as you detox from your busy morning of lessons.<br><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-white flex-grow-1" style="width: 100%;height: 100%;">
+                        <div class="card-body border-white flex-grow-1">
+                            <h4 class="text-center card-title">Benji "Hour"</h4>
+                            <h5 class="text-center card-title">7pm - 9pm</h5>
+                            <p class="text-center card-text" style="height: 144px;"><br>Pop, news, experiments, fun. This is what the Benji hour is and more!<br><br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-   
-    <!--<div id="live-shows-wrapper" class="tab-content-wrapper hidden"></div>-->
-    <div id="people-list-wrapper" class="tab-content-wrapper">
-        <section class="Meet">
-            <section class="people">
-                <h1 class="title">Hosts</h1>
-            <div class = "person">
-                <h3>Cam Curtis</h3>
-                <h4>Host</h4>
-                <p>Nobody knows how he got this job, he's got no experience, can't talk very well. But apparently sounds very good on the radio!</p>
-            </div>
-            <div class = "person">
-                <h3>Matt Salé</h3>
-                <h4>Host</h4>
-                <p>He pretty much came with the room when we first hired it but now he's the nations favourite radio host that nobody knows about.</p>
-            </div>
-            <div class = "person">
-                <h3>Luke Holland</h3>
-                <h4>Host</h4>
-                <p>The greenie in the room. Is surprisingly good at this!</p>
-            </div>
-            <div class = "person">
-                <h3>Daniel Bradley</h3>
-                <h4>Politics</h4>
-                <p>With an extensive background in annoying everyone by talking about politics too much, Dan is absolutely perfect for this role and only sometimes has to be cut off for time.</p>
-            </div>
-            <div class="person">
-                <h3>Jeetaditya Chatterjee</h3>
-                <h4>Senior Student Correspondent</h4>
-                <p>No-one can pronounce his name so we call him yeet. However he does know his stuff.</p>
-            </div>
-            <div class = "person">
-                <h3>Rory Milligan</h3>
-                <h4>Music Man</h4>
-                <p>A strange individual, sometimes he plays music, sometimes he disappears. Shrouded in mysery Rory is a magical being. Much to the likes of a pegasus. </p>
-            </div>
-        </section>
-        <section class="people">
-            <h1 class="title">Producers</h1>
-            <div class = "person">
-                <h3>Benjamin Lewis</h3>
-                <h4>Executive Producer</h4>
-                <p>The most glorious member of the production team. Definitely not just because he's writing these descriptions for everyone. </p>
-            </div>
-            <div class = "person">
-                <h3>Reilly Hewitson</h3>
-                <h4>Producer</h4>
-                <p>Does things. No-one knows what he does but he seems vaguely helpful so we keep him around.</p>
-            </div>
-            <div class = "person">
-                <h3>Oliver Beardsall</h3>
-                <h4>Producer</h4>
-                <p>He's pretty useless but he can make a damn good cup of tea. Actually, he really can't; he made me tea once it was awful. But his audio sounds good usually!</p>
-            </div>
-            <div class = "person no-margin">
-                <h3>Elliott Scott</h3>
-                <h4>1st Production Assistant</h4>
-                <p>Our expert sports correspondent who has probably played football at least once.</p>
-            </div>
-        </section>
-    </div>
-
-    <hr>
-    <section id="footer">
-        <p>Thanks to UTC Reading for letting us use their name</p>
-        <p>If you're interested in putting your song on our station send it in to <a href="mailto:contact@utcr.live">contact@utcr.live</a></p>
-        <p id="social">
-            <a href="https://www.twitter.com/UTCR_Live"><i class="fab fa-twitter fa-2x"></i></a> 
-            <a href="https://www.instagram.com/utcr.live/"><i class="fab fa-instagram fa-2x"></i></a> 
-            <a href="https://www.facebook.com/UTCR.Live/"><i class="fab fa-facebook fa-2x"></i></a> 
-        </p>
-    </section>
-    <!--<script language="javascript" type="text/javascript" src="https://http://cressida.shoutca.st/system/recenttracks.js"></script>-->
-
-    <script src="lib/js/particles.js"></script>
-    <script>
-        var time = new Date();
-        if(time.getHours() >= 9){
-            console.log(time.getHours());
-            document.getElementById("form-button-div").style.display = "none";
-        }
-        console.log(time.getHours());
-        particlesJS.load('particles-js', 'lib/js/particlesjs-config.json', function() {
-            console.log('callback - particles.js config loaded');
-        });
-        
-        if(document.documentElement.clientWidth <= 600){
-            setTimeout(function(){
-                document.getElementById("front-chat-holder").setAttribute("style", "position: fixed;bottom: 50px;left: 0px;right: 0px;top: 0px;display: flex;flex-direction: column;")
-            }, 250)
-        }
-
-        function openTab(tabwrapper, tab){
-            console.log(tabwrapper)
-            tabwrapperelement =  document.getElementById(tabwrapper);
-            tabelement = document.getElementById(tab);
-            document.getElementById("past-shows-wrapper").classList.add("hidden");
-            //document.getElementById("live-shows-wrapper").classList.add("hidden");
-            document.getElementById("people-list-wrapper").classList.add("hidden");
-            document.getElementById("schedule-wrapper").classList.add("hidden");
-            tabwrapperelement.classList.remove("hidden");
-            document.getElementById("past-tab").classList.remove("selected");
-            //document.getElementById("live-tab").classList.remove("selected");
-            document.getElementById("people-tab").classList.remove("selected");
-            document.getElementById("schedule-tab").classList.remove("selected");
-            tabelement.classList.add("selected")    
-        }
-        
-    </script>
-    <!--<script src="https://chat-assets.frontapp.com/v1/chat.bundle.js"></script>
-    <script>
-    window.FrontChat('init', {chatId: '859c156169c40fd76371db394fcd564f', useDefaultLauncher: true})
-    </script>-->
+    <!-- End: 1 Row 3 Columns -->
+    <div class="embed-responsive embed-responsive-21by9 hidden" id="past-wrapper" style="height: 400px;margin: auto;margin-bottom: 15px;width: 50%;margin-top: 15px;"><iframe class="embed-responsive-item" src="https://www.mixcloud.com/widget/iframe/?light=1&amp;feed=%2FUTCRLIVE%2Fplaylists%2Futcrlive%2F"></iframe></div>
+    <div class="embed-responsive embed-responsive-16by9 hidden" id="live-shows-wrapper" style="height: 400px;margin: auto;margin-bottom: 15px;width: 50%;margin-top: 15px;"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aq9S5-t1Xf8" allowfullscreen=""></iframe></div>
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <p class="text-center text-white m-0 small">Copyright&nbsp;© UTCR.LIVE 2020</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/particles.js?h=2cca53ea05a63951a807c0a54b55f194"></script>
+    <script src="assets/js/tabs.js?h=186e068e84b8852ebc69bc22a72870f7"></script>
+    <script src="assets/js/running.js?h=7937e76f744bf25e23db990e99a0d265"></script>
 </body>
-</html>
 
+</html>
