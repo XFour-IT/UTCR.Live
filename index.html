@@ -33,23 +33,31 @@
     <link rel="stylesheet" href="assets/css/index.css"/>
   </head>
 
-  <body style="padding-top: 0; font-family: 'Open Sans', sans-serif">
-    <header
-      id="particles-js"
-      class="masthead text-center text-white"
-      style="
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>UTCR.Live</title>
+  <meta name="description" content="The student operated and run 24/7 live radio station for UTC Reading. " />
+  <meta property="og:image" content="assets/img/Banner.jpg" />
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.min.css" />
+</head>
+
+<body style="padding-top: 0; font-family: 'Open Sans', sans-serif">
+  <header id="particles-js" class="masthead text-center text-white" style="
         background-color: #000364;
         background-image: url('unset');
         height: 100vh;
-      "
-    >
-      <div class="masthead-content">
-        <div class="container" style="margin: auto">
-          <h1 class="masthead-heading mb-0">UTCR.Live</h1>
-          <div
-            class="embed-responsive embed-responsive-21by9"
-            id="player"
-            style="
+      ">
+    <div class="masthead-content">
+      <div class="container" style="margin: auto">
+        <h1 class="masthead-heading mb-0">UTCR.Live</h1>
+        <div class="embed-responsive embed-responsive-21by9" id="player" style="
               height: 50px;
               width: 80%;
               margin: auto;
@@ -57,302 +65,236 @@
               margin-right: auto;
               margin-left: auto;
               margin-top: 10vh;
-            "
-          >
-            <iframe
-              class="embed-responsive-item"
-              src="https://player.shoutca.st/?username=utcr"
-              id="player"
-            ></iframe>
+            ">
+          <iframe class="embed-responsive-item" src="https://player.shoutca.st/?username=utcr" id="player"></iframe>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="tab-wrapper">
+    <span onclick="openTab('team-wrapper', 'people-tab')" class="selected" id="people-tab">People</span>
+    <span onclick="openTab('schedule-wrapper', 'schedule-tab')" id="schedule-tab">Schedule</span>
+    <span onclick='window.open("https://news.utcr.live", "_blank")' id="news-tab">News</span>
+    <span onclick="openTab('past-wrapper', 'past-tab')" id="past-tab">Past shows</span>
+    <span onclick='window.open("https://discord.gg/D9Bs5Mz", "_blank")' id="past-tab">Chat</span>
+  </div>
+  <div id="team-wrapper" class="team-boxed">
+    <div class="container">
+      <div class="intro">
+        <h2 class="text-center">Team</h2>
+        <p class="text-center">The wonderful team behind UTCR.Live</p>
+      </div>
+      <div class="row no-gutters d-flex people">
+        <div class="col-md-6 col-lg-4 flex-grow-1 item people-boxes">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Benjamin Lewis</h3>
+            <p class="title">Executive Producer</p>
+            <p class="description">
+              <br />The most glorious member of the production team.
+              Definitely not just because he's writing these descriptions for
+              everyone.<br /><br />
+            </p>
+            <div class="social">
+              <a href="https://twitter.com/benjisoft/"><i class="fa fa-twitter"></i></a><a
+                href="https://www.linkedin.com/in/benji-lewis/"><i class="fa fa-linkedin-square"></i></a><a
+                href="https://benjisoft.org.uk/"><i class="fa fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 flex-grow-1 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Oliver Beardsall</h3>
+            <p class="title">Producer + Sound Engineer</p>
+            <p class="description" style="height: 110px">
+              <br />He's pretty useless but he can make a damn good cup of
+              tea. Actually, he really can't; he made me tea once it was
+              awful. But his audio sounds good usually!<br /><br />
+            </p>
+            <div class="social">
+              <a href="https://twitter.com/Oli_Beardsall"><i class="fa fa-twitter"></i></a><a href="#"><i
+                  class="fa fa-linkedin-square"></i></a><a href="http://beardsall.xyz/"><i class="fa fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 flex-grow-1 item">
+          <div class="box" style="height: 100%">
+            <h3 class="flex-grow-1 name">Reilly Hewitson</h3>
+            <p class="title">Producer + Web Developer</p>
+            <p class="description">
+              Aenean tortor est, vulputate quis leo in, vehicula rhoncus
+              lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
+              finibus est, et interdum justo suscipit id. Etiam dictum feugiat
+              tellus, a semper massa.
+            </p>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/reilly-hewitson/"><i class="fa fa-linkedin-square"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <div id="tab-wrapper">
-      <span
-        onclick="openTab('team-wrapper', 'people-tab')"
-        class="selected"
-        id="people-tab"
-        >People</span
-      >
-      <span
-        onclick="openTab('schedule-wrapper', 'schedule-tab')"
-        id="schedule-tab"
-        >Schedule</span
-      >
-      <span onclick="openTab('live-shows-wrapper', 'live-tab')" id="live-tab"
-        >Live shows</span
-      >
-      <span onclick="window.open('https://news.utcr.live', '_blank')"
-        >News</span
-      >
-      <span onclick="openTab('past-wrapper', 'past-tab')" id="past-tab"
-        >Past shows</span
-      >
-      <span
-        onclick='window.open("https://discord.gg/D9Bs5Mz", "_blank")'
-        id="past-tab"
-        >Chat</span
-      >
+      <div class="row no-gutters people">
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Thomas Wright</h3>
+            <p class="title">Business Relationship Manager</p>
+            <p class="description">
+              <br />Tom kinda just showed up one day ready and raring to go.
+              We let him in and now he's meant to send emails to important
+              people.<br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Jeetaditya Chatterjee</h3>
+            <p class="title">Host + Production assistant</p>
+            <p class="description" style="height: 110px">
+              <br />No-one can pronounce his name so we call him yeet. However
+              he does know his stuff.<br /><br />
+            </p>
+            <div class="social">
+              <a href="https://twitter.com/jeetelongname"><i class="fa fa-twitter"></i></a><a
+                href="https://www.linkedin.com/in/jeetaditya-chatterjee-138792192/"><i
+                  class="fa fa-linkedin-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Elliott Scott</h3>
+            <p class="title">Sports Correspondent</p>
+            <p class="description">
+              <br />Our expert sports correspondent who has probably played
+              football at least once.<br /><br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters people">
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Cam Curtis</h3>
+            <p class="title">Host</p>
+            <p class="description">
+              <br />Nobody knows how he got this job, he's got no experience,
+              can't talk very well. But apparently sounds very good on the
+              radio!<br /><br />
+            </p>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/camron-curtis-44105a177/"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name" style="height: 33px">Matt Salé<br /><br /></h3>
+            <p class="title">Host</p>
+            <p class="description" style="height: 110px">
+              <br />He pretty much came with the room when we first hired it
+              but now he's the nations favourite radio host that nobody knows
+              about.<br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Daniel Bradley</h3>
+            <p class="title">Host + Politics Correspondent</p>
+            <p class="description" style="height: 110px">
+              <br />With an extensive background in annoying everyone by
+              talking about politics too much, Dan is absolutely perfect for
+              this role and only sometimes has to be cut off for time.<br /><br />
+            </p>
+            <div class="social">
+              <a href="https://twitter.com/thedanbrad"><i class="fa fa-twitter"></i></a><a
+                href="https://www.linkedin.com/in/danielbradley2019/"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters people">
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Luke Holland</h3>
+            <p class="title">Host</p>
+            <p class="description" style="height: 110px">
+              <br />The greenie in the room. Is surprisingly good at this!<br /><br />
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 item"></div>
+        <div class="col-md-6 col-lg-4 item">
+          <div class="box" style="height: 100%">
+            <h3 class="name">Rory Milligan</h3>
+            <p class="title">Music Man</p>
+            <p class="description" style="height: 110px">
+              <br />A strange individual, sometimes he plays music, sometimes
+              he disappears. Shrouded in mysery Rory is a magical being. Much
+              to the likes of a pegasus.<br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="team-wrapper" class="team-boxed">
-      <div class="container">
-        <div class="intro">
-          <h2 class="text-center">Team</h2>
-          <p class="text-center">The wonderful team behind UTCR.Live</p>
-        </div>
-        <div class="row no-gutters d-flex people">
-          <div class="col-md-6 col-lg-4 flex-grow-1 item people-boxes">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Benjamin Lewis</h3>
-              <p class="title">Executive Producer</p>
-              <p class="description">
-                <br />The most glorious member of the production team.
-                Definitely not just because he's writing these descriptions for
-                everyone.<br /><br />
-              </p>
-              <div class="social">
-                <a href="https://twitter.com/benjisoft/"
-                  ><i class="fa fa-twitter"></i></a
-                ><a href="https://www.linkedin.com/in/benji-lewis/"
-                  ><i class="fa fa-linkedin-square"></i></a
-                ><a href="https://benjisoft.org.uk/"
-                  ><i class="fa fa-globe"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 flex-grow-1 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Oliver Beardsall</h3>
-              <p class="title">Producer + Sound Engineer</p>
-              <p class="description" style="height: 110px">
-                <br />He's pretty useless but he can make a damn good cup of
-                tea. Actually, he really can't; he made me tea once it was
-                awful. But his audio sounds good usually!<br /><br />
-              </p>
-              <div class="social">
-                <a href="https://twitter.com/Oli_Beardsall"
-                  ><i class="fa fa-twitter"></i></a
-                ><a href="#"><i class="fa fa-linkedin-square"></i></a
-                ><a href="http://beardsall.xyz/"><i class="fa fa-globe"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 flex-grow-1 item">
-            <div class="box" style="height: 100%">
-              <h3 class="flex-grow-1 name">Reilly Hewitson</h3>
-              <p class="title">Producer + Web Developer</p>
-              <p class="description">
-                Aenean tortor est, vulputate quis leo in, vehicula rhoncus
-                lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                finibus est, et interdum justo suscipit id. Etiam dictum feugiat
-                tellus, a semper massa.
-              </p>
-              <div class="social">
-                <a href="https://www.linkedin.com/in/reilly-hewitson/"
-                  ><i class="fa fa-linkedin-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row no-gutters people">
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Thomas Wright</h3>
-              <p class="title">Business Relationship Manager</p>
-              <p class="description">
-                <br />Tom kinda just showed up one day ready and raring to go.
-                We let him in and now he's meant to send emails to important
-                people.<br /><br />
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Jeetaditya Chatterjee</h3>
-              <p class="title">Host + Production assistant</p>
-              <p class="description" style="height: 110px">
-                <br />No-one can pronounce his name so we call him yeet. However
-                he does know his stuff.<br /><br />
-              </p>
-              <div class="social">
-                <a href="https://twitter.com/jeetelongname"
-                  ><i class="fa fa-twitter"></i></a
-                ><a
-                  href="https://www.linkedin.com/in/jeetaditya-chatterjee-138792192/"
-                  ><i class="fa fa-linkedin-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Elliott Scott</h3>
-              <p class="title">Sports Correspondent</p>
-              <p class="description">
-                <br />Our expert sports correspondent who has probably played
-                football at least once.<br /><br /><br />
+  </div>
+  <div id="schedule-wrapper" class="hidden">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-md-4 flex-grow-1">
+          <div class="card border-white flex-grow-1" style="width: 100%; height: 100%">
+            <div class="card-body">
+              <h3 class="text-center card-title">
+                Morning Show with Thomas Wright
+              </h3>
+              <h5 class="text-center card-title">
+                7am - 10 am Tuesday & Wednesday
+              </h5>
+              <p class="text-center card-text">
+                <br />The Morning show broadcast bright and early live from
+                UTC Reading. Featuring the student update from Jeet alongside
+                other updates and various discussions<br /><br />
               </p>
             </div>
           </div>
         </div>
-        <div class="row no-gutters people">
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Cam Curtis</h3>
-              <p class="title">Host</p>
-              <p class="description">
-                <br />Nobody knows how he got this job, he's got no experience,
-                can't talk very well. But apparently sounds very good on the
-                radio!<br /><br />
-              </p>
-              <div class="social">
-                <a href="https://www.linkedin.com/in/camron-curtis-44105a177/"
-                  ><i class="fa fa-linkedin-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name" style="height: 33px">Matt Salé<br /><br /></h3>
-              <p class="title">Host</p>
-              <p class="description" style="height: 110px">
-                <br />He pretty much came with the room when we first hired it
-                but now he's the nations favourite radio host that nobody knows
-                about.<br /><br />
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Daniel Bradley</h3>
-              <p class="title">Host + Politics Correspondent</p>
-              <p class="description" style="height: 110px">
-                <br />With an extensive background in annoying everyone by
-                talking about politics too much, Dan is absolutely perfect for
-                this role and only sometimes has to be cut off for time.<br /><br />
-              </p>
-              <div class="social">
-                <a href="https://twitter.com/thedanbrad"
-                  ><i class="fa fa-twitter"></i></a
-                ><a href="https://www.linkedin.com/in/danielbradley2019/"
-                  ><i class="fa fa-linkedin-square"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row no-gutters people">
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Luke Holland</h3>
-              <p class="title">Host</p>
-              <p class="description" style="height: 110px">
-                <br />The greenie in the room. Is surprisingly good at this!<br /><br />
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 item"></div>
-          <div class="col-md-6 col-lg-4 item">
-            <div class="box" style="height: 100%">
-              <h3 class="name">Rory Milligan</h3>
-              <p class="title">Music Man</p>
-              <p class="description" style="height: 110px">
-                <br />A strange individual, sometimes he plays music, sometimes
-                he disappears. Shrouded in mysery Rory is a magical being. Much
-                to the likes of a pegasus.<br /><br />
+        <div class="col-md-3"></div>
+        <div class="col-md-4">
+          <div class="card border-white flex-grow-1" style="width: 100%; height: 100%">
+            <div class="card-body border-white flex-grow-1">
+              <h4 class="text-center card-title">Thursday Flexi-show</h4>
+              <h5 class="text-center card-title">12:30 - 14:00</h5>
+              <p class="text-center card-text" style="height: 144px">
+                <br />A show run by whoever wants to run it. Not guaranteed to
+                run but whenever it is it will be informative and fun<br /><br />
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="schedule-wrapper" class="hidden">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-md-4 flex-grow-1">
-            <div
-              class="card border-white flex-grow-1"
-              style="width: 100%; height: 100%"
-            >
-              <div class="card-body">
-                <h3 class="text-center card-title">
-                  Morning Show with Thomas Wright
-                </h3>
-                <h5 class="text-center card-title">
-                  7am - 10 am Tuesday & Wednesday
-                </h5>
-                <p class="text-center card-text">
-                  <br />The Morning show broadcast bright and early live from
-                  UTC Reading. Featuring the student update from Jeet alongside
-                  other updates and various discussions<br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card border-white flex-grow-1"
-              style="width: 100%; height: 100%"
-            >
-              <div class="card-body border-white flex-grow-1">
-                <h4 class="text-center card-title">Thursday Flexi-show</h4>
-                <h5 class="text-center card-title">12:30 - 14:00</h5>
-                <p class="text-center card-text" style="height: 144px">
-                  <br />A show run by whoever wants to run it. Not guaranteed to
-                  run but whenever it is it will be informative and fun<br /><br />
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="embed-responsive embed-responsive-21by9 hidden"
-      id="past-wrapper"
-      style="
+  </div>
+  <div class="embed-responsive embed-responsive-21by9 hidden" id="past-wrapper" style="
         height: 400px;
         margin: auto;
         margin-bottom: 15px;
         width: 50%;
         margin-top: 15px;
-      "
-    >
-      <iframe
-        class="embed-responsive-item"
-        src="https://www.mixcloud.com/widget/iframe/?light=1&amp;feed=%2FUTCRLIVE%2Fplaylists%2Futcrlive%2F"
-      ></iframe>
+      ">
+    <iframe class="embed-responsive-item"
+      src="https://www.mixcloud.com/widget/iframe/?light=1&amp;feed=%2FUTCRLIVE%2Fplaylists%2Futcrlive%2F"></iframe>
+  </div>
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="text-center text-white m-0 small">
+        Copyright&nbsp;© UTCR.LIVE 2020
+      </p>
     </div>
-    <div
-      class="embed-responsive embed-responsive-16by9 hidden"
-      id="live-shows-wrapper"
-      style="
-        height: 400px;
-        margin: auto;
-        margin-bottom: 15px;
-        width: 50%;
-        margin-top: 15px;
-      "
-    >
-      <iframe
-        class="embed-responsive-item"
-        src="https://www.youtube.com/embed/aq9S5-t1Xf8"
-        allowfullscreen=""
-      ></iframe>
-    </div>
-    <footer class="py-5 bg-black">
-      <div class="container">
-        <p class="text-center text-white m-0 small">
-          Copyright&nbsp;© UTCR.LIVE 2020
-        </p>
-      </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-  </body>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/running.js"></script>
+</body>
+
 </html>
