@@ -38,10 +38,5 @@
   left: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  #player {
-    width: 100vw;
-    margin: 0;
-  }
-}
+
 
